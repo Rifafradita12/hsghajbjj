@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 50;
+  justify-content: space-around;
+  background-color: deeppink;
+}
+
+header {
+  background-color: violet;
+  color: black;
+  height: 10vh;
+  text-align: center;
+}
+
+#content {
+  display: flex;
+  flex: 1;
+  padding: 5vh;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: rgb(255, 211, 196);
+  height: 10vh;
+  text-align: center;
+}
+
+aside {
+  background-color: aquamarine;
+  width: 950px;
+  height: 350px;
+  text-align: center;
+}
+article {
+  background-color: lightcyan;
+  width: 800;
+  text-align: center;
+}
+article > p {
+  height: 140px;
+}
+#container2 {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}

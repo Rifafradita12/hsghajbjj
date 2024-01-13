@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.div1 {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  height: 200%;
+}
+.div2 {
+  flex: 4;
+}
+
+header {
+  padding: 10px;
+  box-sizing: border-box;
+  height: 10vh;
+}
+
+article {
+  background-color: darkseagreen;
+  flex: 4;
+  padding: 10px;
+}
+
+.isi {
+  display: flex;
+  flex: 1;
+  height: 80vh;
+}
+
+aside {
+  background-color: cornflowerblue;
+  flex: 1;
+  padding: 10px;
+}
+
+nav {
+  background-color: rgb(240, 128, 236);
+  flex: 1;
+  padding: 20px;
+}
+footer {
+  background-color: navajowhite;
+  padding: 10px;
+  height: 10vh;
+  box-sizing: border-box;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Biaya Parkir</title>
+</head>
+<body>
+    <table>
+
+    <h2>Kalkulator Biaya Parkir</h2>
+
+    <label for="jamMasuk">Jam Masuk:</label>
+    <input type="number" id="jamMasuk" placeholder="Jam Masuk" />
+
+    <label for="jamKeluar">Jam Keluar:</label>
+    <input type="number" id="jamKeluar" placeholder="Jam Keluar" />
+
+    <button onclick="hitungBiayaParkir()">Hitung Biaya Parkir</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        // Fungsi untuk menghitung biaya parkir
+        
+        function hitungBiayaParkir() {
+            var jamMasuk = document.getElementById("jamMasuk").value;
+            var jamKeluar = document.getElementById("jamKeluar").value;
+
+            // Validasi input
+            if (jamMasuk >= 0 && jamKeluar >= 0 && jamMasuk <= 24 && jamKeluar <= 24) {
+                var lamaParkir = jamKeluar - jamMasuk;
+                var biayaParkir = 3000; // Biaya untuk 2 jam pertama
+                var biayaTambahan = 1000; // Biaya tambahan per jam
+
+                if (lamaParkir > 2) {
+                    biayaParkir += (lamaParkir - 2) * biayaTambahan;
+                }
+
+                // Menampilkan hasil
+                document.getElementById("hasil").innerHTML = "Lama Parkir: " + lamaParkir + " jam<br>Biaya Parkir: " + biayaParkir.toLocaleString() + " rupiah";
+            } else {
+                // Menampilkan pesan error jika input tidak valid
+                document.getElementById("hasil").innerHTML = "Masukkan jam masuk dan jam keluar yang valid (0-24)";
+            }
+        }
+    </script>
+</table>
+</body>
+</html>

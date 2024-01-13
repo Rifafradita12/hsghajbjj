@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Total</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="weeding.jpg" alt="Product Image" class="img-thumbnail" width="200" height="250">
+              </td>
+              <td>Rp.5000.000</td>
+              <td>
+                <input type="number" class="form-control" value="2">
+              </td>
+              <td>Rp.15.000.000</td>
+              <td>
+                <button class="btn btn-danger btn-sm">Remove</button>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <img src="rok.jpg" alt="Product Image" class="img-thumbnail" width="200" height="250">
+                </td>
+                <td>Rp.70.000</td>
+                <td>
+                  <input type="number" class="form-control" value="1">
+                </td>
+                <td>Rp.70.000</td>
+                <td>
+                  <button class="btn btn-danger btn-sm">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="seragam.jpg" alt="Product Image" class="img-thumbnail" width="200" height="250">
+                </td>
+                <td>Rp.200.000</td>
+                <td>
+                  <input type="number" class="form-control" value="4">
+                </td>
+                <td>Rp.880.000</td>
+                <td>
+                  <button class="btn btn-danger btn-sm">Remove</button>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Subtotal
+            <span class="badge badge-primary badge-pill">Rp.16.580.000</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Shipping
+            <span class="badge badge-primary badge-pill">Rp.100.000</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Total
+            <span class="badge badge-primary badge-pill">Rp.16.680.000</span>
+          </li>
+        </ul>
+        <button class="btn btn-success mt-3">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
